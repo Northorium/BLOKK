@@ -2,6 +2,9 @@
 .shopify/
 node_modules/
 
+# Claude Code
+.claude/
+
 # Environment
 .env
 .env.*

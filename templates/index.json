@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero-logo",
+      "settings": {
+        "logo_width": 500,
+        "section_height": 60,
+        "color_scheme": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c"
+      }
+    },
+    "order-buttons": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Order Now",
+            "heading_size": "h1"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order for Takeaway",
+            "button_link": "https://smashhouse.heapsgo.com/en/download-app/",
+            "button_style_secondary": false,
+            "button_label_2": "Order Delivery (Foodora)",
+            "button_link_2": "https://www.foodora.no/restaurant/sm5k/blokk-asker-mathall",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "buttons"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "location-asker": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Asker",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Asker Mathall</strong><br>Strøket 15A, 1383 Asker</p>"
+          }
+        },
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "OPENING HOURS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "hours": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mon–Fri: 11:00–21:00<br>Sat: 10:00–21:00<br>Sun: 13:00–18:00</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "caption",
+        "hours"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 32
+      }
+    },
+    "location-oslo": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Oslo",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Takeaway Only</strong><br>Ljabruveien 87, Oslo</p>"
+          }
+        },
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "OPENING HOURS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "hours": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mon–Fri: 16:00–20:00<br>Sat–Sun: 15:00–20:00</p>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order via App",
+            "button_link": "https://smashhouse.heapsgo.com/en/download-app/",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "caption",
+        "hours",
+        "buttons"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "social": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow Us",
+            "heading_size": "h2"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Instagram",
+            "button_link": "https://www.instagram.com/blokkoslo/",
+            "button_style_secondary": true,
+            "button_label_2": "Facebook",
+            "button_link_2": "https://www.facebook.com/blokk.pizza/",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "buttons"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "order-buttons",
+    "location-asker",
+    "location-oslo",
+    "social"
+  ]
+}

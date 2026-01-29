@@ -1,0 +1,78 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .hero-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: {{ section.settings.section_height }}vh;
+    padding: 40px 20px;
+  }
+
+  .hero-logo-section img {
+    max-width: 100%;
+    width: {{ section.settings.logo_width }}px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero-logo-section {
+      min-height: {{ section.settings.section_height | times: 0.6 }}vh;
+    }
+    .hero-logo-section img {
+      width: {{ section.settings.logo_width | times: 0.7 | round }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="hero-logo-section color-{{ section.settings.color_scheme }} gradient">
+  <a href="{{ routes.root_url }}">
+    <img
+      src="{{ 'logo-blokk.jpg' | asset_url }}"
+      alt="{{ shop.name | escape }}"
+      loading="eager"
+      fetchpriority="high"
+    >
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Logo",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "label": "Section height",
+      "default": 60
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Logo"
+    }
+  ]
+}
+{% endschema %}
