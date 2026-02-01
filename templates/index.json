@@ -12,8 +12,8 @@
     "hero": {
       "type": "hero-logo",
       "settings": {
-        "logo_width": 500,
-        "section_height": 60,
+        "logo_width": 700,
+        "section_height": 40,
         "color_scheme": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c"
       }
     },
@@ -23,18 +23,18 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Order Now",
+            "heading": "Bestill",
             "heading_size": "h1"
           }
         },
         "buttons": {
           "type": "button",
           "settings": {
-            "button_label": "Order for Takeaway",
-            "button_link": "https://smashhouse.heapsgo.com/en/download-app/",
+            "button_label": "Bestill fra Asker",
+            "button_link": "https://blokk.heapsgo.com/en/nor/restaurants/blokk-oslo---asker-mathall/",
             "button_style_secondary": false,
-            "button_label_2": "Order Delivery (Foodora)",
-            "button_link_2": "https://www.foodora.no/restaurant/sm5k/blokk-asker-mathall",
+            "button_label_2": "Bestill fra Oslo",
+            "button_link_2": "https://blokk.heapsgo.com/en/nor/restaurants/blokk---ljabruveien/",
             "button_style_secondary_2": true
           }
         }
@@ -46,48 +46,110 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-warm-accent",
         "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
       }
     },
-    "location-asker": {
-      "type": "rich-text",
+    "menu-preview": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "menu-item-1": {
+          "type": "column",
           "settings": {
-            "heading": "Asker",
-            "heading_size": "h1"
+            "title": "Pepperoni (hot honey)",
+            "text": "<p>Pepperoni, mozzarella og drypp av hot honey på vår 2-dagers fermenterte deig med sprø frico-kanter. Søtt møter sterkt!</p><p><strong>109 kr</strong></p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text": {
-          "type": "text",
+        "menu-item-2": {
+          "type": "column",
           "settings": {
-            "text": "<p><strong>Asker Mathall</strong><br>Strøket 15A, 1383 Asker</p>"
+            "title": "Margherita",
+            "text": "<p>Klassisk Detroit! Husets marinara, cherrytomater, basilikum, olivenolje og sprø ostekanter.</p><p><strong>109 kr</strong></p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "caption": {
-          "type": "caption",
+        "menu-item-3": {
+          "type": "column",
           "settings": {
-            "caption": "OPENING HOURS",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "title": "Ost & Skinke",
+            "text": "<p>Klassisk ost og skinke på vår 2-dagers deig med sprø frico-kanter. Perfekt for alle aldre!</p><p><strong>109 kr</strong></p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "hours": {
-          "type": "text",
+        "menu-item-4": {
+          "type": "column",
           "settings": {
-            "text": "<p>Mon–Fri: 11:00–21:00<br>Sat: 10:00–21:00<br>Sun: 13:00–18:00</p>"
+            "title": "Bacon & Ananas",
+            "text": "<p>Tykt bacon, fersk ananas, mozzarella og marinara-striper på sprø frico-kanter. Ja, vi liker ananas på pizza!</p><p><strong>109 kr</strong></p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "caption",
-        "hours"
+        "menu-item-1",
+        "menu-item-2",
+        "menu-item-3",
+        "menu-item-4"
+      ],
+      "settings": {
+        "title": "Bestselgere",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_mobile": "1",
+        "color_scheme": "scheme-1",
+        "background_style": "none",
+        "button_label": "Se full meny",
+        "button_link": "https://blokk.heapsgo.com/en/nor/restaurants/blokk-oslo---asker-mathall/",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "locations": {
+      "type": "locations",
+      "settings": {
+        "hours_label": "ÅPNINGSTIDER",
+        "heading_1": "Asker",
+        "name_1": "Asker Mathall",
+        "address_1": "Strøket 15A, 1383 Asker",
+        "hours_1": "Man–Fre: 11:00–21:00\nLør: 10:00–21:00\nSøn: 13:00–18:00",
+        "color_scheme_1": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c",
+        "heading_2": "Oslo",
+        "name_2": "Ljabruveien",
+        "address_2": "Ljabruveien 87, Oslo",
+        "hours_2": "Man–Fre: 16:00–20:00\nLør–Søn: 15:00–20:00",
+        "color_scheme_2": "scheme-4"
+      }
+    },
+    "about-blokk": {
+      "type": "rich-text",
+      "blocks": {
+        "about-heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Om BLOKK",
+            "heading_size": "h1"
+          }
+        },
+        "about-text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BLOKK lager Detroit-style pizza med to-dagers gjæret deig, hjemmelagde sauser og sprø ostekanter (frico). Alt lages fra bunnen av - hver dag, fersk og med kjærlighet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about-heading",
+        "about-text"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -95,61 +157,36 @@
         "color_scheme": "scheme-d9c680aa-c47d-4ebf-af2d-70155070b54c",
         "full_width": true,
         "padding_top": 52,
-        "padding_bottom": 32
+        "padding_bottom": 52
       }
     },
-    "location-oslo": {
-      "type": "rich-text",
+    "newsletter": {
+      "type": "newsletter",
       "blocks": {
-        "heading": {
+        "newsletter-heading": {
           "type": "heading",
           "settings": {
-            "heading": "Oslo",
+            "heading": "Få eksklusive tilbud og nyheter",
             "heading_size": "h1"
           }
         },
-        "text": {
-          "type": "text",
+        "newsletter-paragraph": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p><strong>Takeaway Only</strong><br>Ljabruveien 87, Oslo</p>"
+            "text": "<p>Meld deg på vårt nyhetsbrev for å få eksklusive tilbud, nyheter og oppdateringer fra BLOKK.</p>"
           }
         },
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "OPENING HOURS",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "hours": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Mon–Fri: 16:00–20:00<br>Sat–Sun: 15:00–20:00</p>"
-          }
-        },
-        "buttons": {
-          "type": "button",
-          "settings": {
-            "button_label": "Order via App",
-            "button_link": "https://smashhouse.heapsgo.com/en/download-app/",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+        "newsletter-email": {
+          "type": "email_form",
+          "settings": {}
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "caption",
-        "hours",
-        "buttons"
+        "newsletter-heading",
+        "newsletter-paragraph",
+        "newsletter-email"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 52,
@@ -162,7 +199,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Follow Us",
+            "heading": "Følg Oss",
             "heading_size": "h2"
           }
         },
@@ -195,8 +232,10 @@
   "order": [
     "hero",
     "order-buttons",
-    "location-asker",
-    "location-oslo",
+    "menu-preview",
+    "locations",
+    "about-blokk",
+    "newsletter",
     "social"
   ]
 }

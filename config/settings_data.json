@@ -207,6 +207,17 @@
           "secondary_button_label": "#1a1a1a",
           "shadow": "#1a1a1a"
         }
+      },
+      "scheme-warm-accent": {
+        "settings": {
+          "background": "#020912",
+          "background_gradient": "",
+          "text": "#fcfcfc",
+          "button": "#FF5B24",
+          "button_label": "#fcfcfc",
+          "secondary_button_label": "#fcfcfc",
+          "shadow": "#020912"
+        }
       }
     }
   },

@@ -1,0 +1,154 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 749px) {
+    .locations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .location-block {
+    padding: 52px 24px;
+    text-align: center;
+  }
+
+  .location-block h2 {
+    margin-bottom: 1rem;
+  }
+
+  .location-block .location-address {
+    margin-bottom: 1.5rem;
+  }
+
+  .location-block .location-caption {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-block .location-hours {
+    line-height: 1.8;
+  }
+{%- endstyle -%}
+
+<div class="locations-grid">
+  <div class="location-block color-{{ section.settings.color_scheme_1 }} gradient">
+    <h2 class="h1">{{ section.settings.heading_1 }}</h2>
+    <div class="location-address">
+      <strong>{{ section.settings.name_1 }}</strong><br>
+      {{ section.settings.address_1 }}
+    </div>
+    <div class="location-caption">{{ section.settings.hours_label }}</div>
+    <div class="location-hours">
+      {{ section.settings.hours_1 | newline_to_br }}
+    </div>
+  </div>
+
+  <div class="location-block color-{{ section.settings.color_scheme_2 }} gradient">
+    <h2 class="h1">{{ section.settings.heading_2 }}</h2>
+    <div class="location-address">
+      <strong>{{ section.settings.name_2 }}</strong><br>
+      {{ section.settings.address_2 }}
+    </div>
+    <div class="location-caption">{{ section.settings.hours_label }}</div>
+    <div class="location-hours">
+      {{ section.settings.hours_2 | newline_to_br }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Locations",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hours_label",
+      "label": "Hours label",
+      "default": "ÅPNINGSTIDER"
+    },
+    {
+      "type": "header",
+      "content": "Location 1"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "Heading",
+      "default": "Asker"
+    },
+    {
+      "type": "text",
+      "id": "name_1",
+      "label": "Name",
+      "default": "Asker Mathall"
+    },
+    {
+      "type": "text",
+      "id": "address_1",
+      "label": "Address",
+      "default": "Strøket 15A, 1383 Asker"
+    },
+    {
+      "type": "textarea",
+      "id": "hours_1",
+      "label": "Hours",
+      "default": "Man–Fre: 11:00–21:00\nLør: 10:00–21:00\nSøn: 13:00–18:00"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_1",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Location 2"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading",
+      "default": "Oslo"
+    },
+    {
+      "type": "text",
+      "id": "name_2",
+      "label": "Name",
+      "default": "Ljabruveien"
+    },
+    {
+      "type": "text",
+      "id": "address_2",
+      "label": "Address",
+      "default": "Ljabruveien 87, Oslo"
+    },
+    {
+      "type": "textarea",
+      "id": "hours_2",
+      "label": "Hours",
+      "default": "Man–Fre: 16:00–20:00\nLør–Søn: 15:00–20:00"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_2",
+      "label": "Color scheme",
+      "default": "scheme-4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Locations"
+    }
+  ]
+}
+{% endschema %}
