@@ -114,6 +114,33 @@
         "padding_bottom": 36
       }
     },
+    "side-hustle": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Side Hustle",
+        "heading_size": "h1",
+        "description": "<p>Håndlaget chilisaus fra vår kompis Kyrre. Perfekt på pizzaen - eller rett fra skjeen.</p>",
+        "show_description": false,
+        "description_style": "subtitle",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "locations": {
       "type": "locations",
       "settings": {
@@ -160,39 +187,6 @@
         "padding_bottom": 52
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "newsletter-heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Få eksklusive tilbud og nyheter",
-            "heading_size": "h1"
-          }
-        },
-        "newsletter-paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Meld deg på vårt nyhetsbrev for å få eksklusive tilbud, nyheter og oppdateringer fra BLOKK.</p>"
-          }
-        },
-        "newsletter-email": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "newsletter-heading",
-        "newsletter-paragraph",
-        "newsletter-email"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "social": {
       "type": "rich-text",
       "blocks": {
@@ -233,9 +227,9 @@
     "hero",
     "order-buttons",
     "menu-preview",
+    "side-hustle",
     "locations",
     "about-blokk",
-    "newsletter",
     "social"
   ]
 }
