@@ -171,7 +171,7 @@
         "about-text": {
           "type": "text",
           "settings": {
-            "text": "<p>BLOKK lager Detroit-style pizza med to-dagers gjæret deig, hjemmelagde sauser og sprø ostekanter (frico). Alt lages fra bunnen av - hver dag, fersk og med kjærlighet.</p>"
+            "text": "<p>BLOKK lager Detroit-style pizza med to-dagers gjæret deig, hjemmelagde sauser og sprø ostekanter (frico). Alt lages fra bunnen av - hver dag, fersk og med kjærlighet.</p><p>Detroit-style pizza kjennetegnes av den luftige, focaccia-lignende bunnen og de karamelliserte ostekantene som oppstår når osten møter den varme stålpannen. Vi bruker kun kvalitetsingredienser og lar deigen modnes i minst 48 timer for optimal smak og tekstur.</p>"
           }
         }
       },
