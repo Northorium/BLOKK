@@ -117,6 +117,7 @@
     "side-hustle": {
       "type": "featured-collection",
       "settings": {
+        "collection": "side-hustle",
         "title": "Side Hustle",
         "heading_size": "h1",
         "description": "<p>Håndlaget chilisaus fra vår kompis Kyrre. Perfekt på pizzaen - eller rett fra skjeen.</p>",
